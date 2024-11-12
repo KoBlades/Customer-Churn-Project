@@ -43,7 +43,7 @@ Another significant finding was related to the age of the accounts. The highest 
 </div>
 
 ## Predictive Modeling
-Our predictive model achieved an accuracy rate of **82%**. This model can help identify potential churn customers based on the analyzed features.
+We created a logistic regression model to predict whether a customer would churn or not. Our predictive model achieved an accuracy rate of **82%**. The model identified the key features in predicting churn are the monthly subscription rate, support tickets per month, user rating, watchlist size, and the total charges over the account lifetime.
 
 We also created a test set to assess how well the predictive model performs against the variables most correlated with churn. If the model performs better on this refined dataset, we can confidently assert that we've pinpointed the leading indicators of churn.
 
