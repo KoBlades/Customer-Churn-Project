@@ -19,8 +19,6 @@
 
 ---
 
-**Team Members:** Megan, Dhwani, Long, Jonathan
-
 ## Project Overview
 This project focuses on predicting customer churn rates for a fictitious streaming subscription service using machine learning techniques. We utilized a dataset downloaded from Kaggle, which was clean and free of duplicates and missing values.
 
