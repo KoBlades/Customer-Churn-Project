@@ -34,6 +34,9 @@ We began by thoroughly cleaning the dataset to ensure its integrity. This includ
 ## Visualizations and Insights
 To complement our predictive models, we created several visualizations that help illustrate key insights regarding churn rates. Our analysis revealed two main factors affecting churn:
 
+## Customer Churn Distribution 
+A clear overview of the churn rate within our dataset. The visualization reveals that the majority of customers remain subscribed, with only a small portion choosing to churn. This imbalance indicates that while most customers are retained, there is a significant enough churn segment to warrant targeted retention strategies. The churn segment represents valuable insights into behaviors and characteristics that lead to churn, guiding our predictive modeling and retention efforts.
+
 ### 1. Support Tickets
 Our visualization indicated a correlation between the number of support tickets submitted and the churn rate. Specifically, we found that when users submitted **9 support tickets**, approximately **30%** of those users had churned at some point.
 
