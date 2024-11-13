@@ -34,6 +34,7 @@ This project focuses on predicting customer churn rates for a fictitious streami
 - Scikitlearn
 - Pandas
 - Tableau
+- PySpark
 
 ## Data Preparation
 We began by thoroughly cleaning the dataset to ensure its integrity. This included checking for and removing any duplicate entries, as well as confirming the absence of missing values. The dataset was largely clear cut, which facilitated our analysis.
