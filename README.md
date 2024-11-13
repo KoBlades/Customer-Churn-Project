@@ -34,7 +34,7 @@ We began by thoroughly cleaning the dataset to ensure its integrity. This includ
 ## Visualizations and Insights
 To complement our predictive models, we created several visualizations that help illustrate key insights regarding churn rates. Our analysis revealed two main factors affecting churn:
 
-## Customer Churn Distribution 
+### Customer Churn Distribution 
 A clear overview of the churn rate within our dataset. The visualization reveals that the majority of customers remain subscribed, with only a small portion choosing to churn. This imbalance indicates that while most customers are retained, there is a significant enough churn segment to warrant targeted retention strategies. The churn segment represents valuable insights into behaviors and characteristics that lead to churn, guiding our predictive modeling and retention efforts.
 
 <div align="center">
@@ -66,6 +66,8 @@ Based on our findings, we propose the following strategies to reduce churn rates
 - **Discounted Pricing for New Customers:** Implement discounted prices for customers during their first year or two of service. This strategy aims to improve first impressions and encourage retention.
 
 - **Enhanced Customer Service:** Identify and prioritize top-performing customer service specialists for support tickets of **5 or higher**. While visualizing the impact of this approach on profit may be challenging, the theoretical benefits in customer satisfaction and retention could be substantial.
+
+- **Contract Based Subscription:** Having subscriptions that include a one year contract to push users deeper into their account age. This will allow a longer retention of these accounts over the year.  
 
 ## Future Work
 To visualize the total loss from churn versus overall profit would be beneficial, as it would provide a clearer picture of the financial implications of customer retention strategies.
