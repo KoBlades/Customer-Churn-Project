@@ -22,6 +22,12 @@
 ## Project Overview
 This project focuses on predicting customer churn rates for a fictitious streaming subscription service using machine learning techniques. We utilized a dataset downloaded from Kaggle, which was clean and free of duplicates and missing values.
 
+## Data Sources
+
+**Kaggle**
+[Predictive Analytics for Customer Churn: Dataset](https://www.kaggle.com/datasets/safrin03/predictive-analytics-for-customer-churn-dataset)
+
+
 ## Data Preparation
 We began by thoroughly cleaning the dataset to ensure its integrity. This included checking for and removing any duplicate entries, as well as confirming the absence of missing values. The dataset was largely clear cut, which facilitated our analysis.
 
