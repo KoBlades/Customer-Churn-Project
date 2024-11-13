@@ -56,9 +56,49 @@ Another significant finding was related to the age of the accounts. The highest 
 </div>
 
 ## Machine Learning Model
-We created a logistic regression model to predict whether a customer would churn or not. Our predictive model achieved an accuracy rate of **82%**. The model identified the key features in predicting churn are the monthly subscription rate, support tickets per month, user rating, watchlist size, and the total charges over the account lifetime.
+We created a supervised machine learning model since our training dataset included target information. We decided to use a Logistic Regression model because it can classify the data into the binary customer categories: churn or not churn. It predicts the probability of a customer discontinuing their services by classifying a customer as churned if the probability calculated from the model is greater than 0.5.
 
-We also created a test set to assess how well the predictive model performs against the variables most correlated with churn. If the model performs better on this refined dataset, we can confidently assert that we've pinpointed the leading indicators of churn.
+The model identified the following as key features in predicting churn:
+- the monthly subscription rate
+- support tickets per month
+- user rating, watchlist size
+- total charges over the account lifetime
+
+The model indicates that higher monthly subscription fees and support tickets increases the probability that a customer will churn. It also indicates that customers who have been with the service longer are less likely to churn, as indicated through the total charges feature since it takes into consideration the account lifetime.
+
+### Model Performance
+This model has an accuracy score of 82%. It has a high precision score of 1 and a lower recall score of 0.82 which is good in the context of identifying customers that are more likely to churn because we want to be sure we are identifying those that will absolutely discontinue their services.
+
+This could allow the company time to get ahead of this by developing a more strategic plan on working with these customers before they decide to discontinue their services.
+
+### Testing the Model
+After training the model, we tested it on data that does not have the churn classification included in the dataset. 
+
+**Account Age**
+The account age distribution between customers predicted to churn and not churn were quite similar across the different membership types. Customers predicted to discontinue their services have an average account age of 6.5 months while those not predicted to churn have an average account age of 5 years. This aligns with the total charges as a key feature since customers that have been on the service longer will have a higher total charges value.
+
+From the customers predicted to churn, it seems like a relatively similar proportion of customer are predicted to churn from each membership tier. Although 73% of those customers predicted to churn will come from customers on standard and basic membership plans.
+
+<div align="center">
+    <img src="https://github.com/KoBlades/Customer-Churn-Project/blob/main/Visualizations/Graphs/AgeBySubBoxPlot.png" alt="BPofAgeBySubType" width="900"/>
+</div>
+
+**Support Tickets Per Month**
+From the graph, we can see that the average number of tickets sent each month is higher for customer predicted to churn. The average number of tickets sent by customers predicted to discontinue their services is up at 8 tickets while those not predicted to churn are sending just over 4 tickets a month on average.
+
+After performing a one-way ANOVA, we concluded that there is a statistically significant difference between the average number of support tickets sent per month between customers predicted to churn and not churn.
+
+Regardless, it seems like a relatively high number tickets are being sent to support. Additional analysis on the tickets being sent should be conducted.
+
+<div align="center">
+    <img src="https://github.com/KoBlades/Customer-Churn-Project/blob/main/Visualizations/Graphs/MonthlySubChargeBP.png" alt="MonthlySubCharge" width="900"/>
+</div>
+
+**Monthly Subscription Fees**
+Looking at the subscription fees, customers that are predicted to churn have a higher average monthly fee at $18.25, while those predicted not to churn have a lower average fee of $11.94. And after performing a one-way ANOVA, we concluded that there is a statistically significant difference between these average monthly subscription fees.
+
+More information or exploration is needed on the price changes over time to understand why the gap between the average monthly fee is significantly different between the two groups.
+
 
 ## Recommendations
 Based on our findings, we propose the following strategies to reduce churn rates:
